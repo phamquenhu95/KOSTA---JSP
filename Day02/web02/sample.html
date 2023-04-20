@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <script>
+        // var a;
+        // console.log(a);
+        // a=10;
+        // console.log(a);
+        
+        const e = document.getElementById("img");
+            e.src="cat.jpg";
+
+        function show() {
+            const e = document.getElementById("img");
+            e.src="cat.jpg";
+        }
+        function hide() {
+            const e = document.getElementById("img");
+            e.src="";
+        }
+        // function print_var() {
+        //     var a;
+        //     console.log(a);
+        //     a=10;
+        // }
+
+
+    </script>
+
+</head>
+<body>
+    <h1 id="header"><span>hello</span> <span>world!</span></h1>
+    <h1>hello world!</h1>
+    <h1 class="cat">new color</h1>
+    <button type="button" class="btn btn-primary" onclick="print_var"> 함수 출력 </button>
+
+
+    <p>
+        <img id="img" src="cat.jpg" alt="고양이">
+        <span class="cat" onclick="show();">고양이 보이기</span>
+        <span class="cat" onclick="hide();">고양이 감추기</span>  
+        <a href="https://www.naver.com">naver</a>
+    </p>
+    <div class="bg-primary w-75 mt-5 shadow">
+        <h3>부트스트랩 적용</h3>
+        <h3>부트스트랩 적용</h3>
+        <h3>부트스트랩 적용</h3>
+        <h3>부트스트랩 적용</h3>
+    </div>
+    <table class="table table-hover">
+        <tr>
+            <th>국어</th>
+            <th>영어</th>
+            <th>수학</th>
+        </tr>
+        <tr>
+            <td>100</td>
+            <td>80</td>
+            <td>80</td>
+        </tr>
+        <tr>
+            <td>90</td>
+            <td>90</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <td>80</td>
+            <td>80</td>
+            <td>80</td>
+        </tr>
+    </table>
+
+    <!-- <table class="table table-hover">
+        ...
+      </table> -->
+
+    <button type="button" class="btn btn-primary"> 버튼 </button>
+
+    <!-- <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <button type="button" class="btn btn-dark">Dark</button>
+    
+    <button type="button" class="btn btn-link">Link</button> -->
+
+</body>
+</html>

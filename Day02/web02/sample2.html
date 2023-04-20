@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+
+</head>
+<body>
+   <h3>배열 만들기</h3>
+   <script>
+        var arr = [10, "string", true, -10];
+        console.log(arr[0]);
+        arr[4]="add";
+        arr[10]="ten";
+        for(let i =0;i < arr.length; i++) {
+        document.write(arr[i]+",");
+        }
+        document.write("<br>");
+        var arr1 = new Array(1,2,3,4,6,7);
+        for(let i =0;i < arr1.length; i++) {
+        document.write(arr1[i]+",");
+        }
+        document.write("<br>");
+        var arr2 = new Array(7);
+        arr2.length = 2;
+        for(let i =0;i < arr2.length; i++) {
+        document.write(arr2[i]+",");
+        }
+        document.write("<br>");
+        var arr3 = new Array();
+        arr3[0]="one";
+        arr3[1]="two";
+        arr3.length =5;
+        for(let i =0;i < arr3.length; i++) {
+        document.write(arr3[i]+",");
+        }
+   </script>
+</body>
+</html>
