@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        h2 {background-color: wheat;
+            border-radius:5px;
+            text-align:center;
+            padding:10px;
+            }
+        #regform {
+            margin:auto;
+            background-color:sandybrown;
+            border-radius:10px;
+            padding:15px 20px 15px 20px;
+            width:50%;
+
+            }
+    </style>
+
+
+</head>
+<body>
+    <h2>회원가입</h2>
+    <hr>
+    <div id="regform">
+
+        <form>
+            <label> 이름
+                <input type="text" id="name" placeholder="이름을 입력하세요" value="">
+            </label>
+
+            <hr>
+            <label for="email">이메일</label>
+            <input type="text" id="email" placeholder="이메일을 입력하세요" value="">
+            <br>
+            <label>암호
+                <input type="password" id="password" placeholder="암호를 입력하세요" value="">
+            </label>
+<!--        <label>날짜-->
+<!--            <input type="date">-->
+<!--        </label>-->
+<!--        <label>range-->
+<!--            <input type="range">-->
+<!--        </label>-->
+<!--        <label>tel-->
+<!--            <input type="tel"> -->
+<!--        </label>-->
+
+            <br>
+<!--                <input type="submit" value="회원가입"> </input>-->
+                <button type="button" onclick="signup()" >회원가입</button>
+
+
+
+        </form>
+
+        </div>
+         <div id="result" class="result">
+        <h3>가입정보</h3>
+        <hr>
+        이름 : <span id="rname"></span><br>
+        이메일 : <span id="remail"></span><br>
+
+
+
+    </div>
+    <script>
+        function signup() {
+            let conf = confirm("정말로 가입하시겠습니까?");
+            if(conf == true) {
+                document.getElementById("regform").style.display="none";
+                document.getElementById("rname").innerHTML = document.getElementById("name").value;
+                document.getElementById("remail").innerHTML = document.getElementById("email").value;
+                document.getElementById("result").setAttribute("style", "display:block; background-color:Khaki;")
+<!--                const password = document.getElementById("password").value;-->
+<!--                    const name = document.querySelector("#name").value;-->
+                alert(name + " 가입되었습니다.");
+            }else {
+            alert("가입되지 않았습니다.");
+            }
+        }
+    </script>
+
+</body>
+</html>
