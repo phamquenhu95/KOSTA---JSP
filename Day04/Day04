@@ -1,4 +1,4 @@
-Maven Library 추가
+Maven Library 추가 into pom.xml
 1. mysql-connector
 https://mvnrepository.com/artifact/com.mysql/mysql-connector-j/8.0.32
 [mysql-connector](https://mvnrepository.com/artifact/com.mysql/mysql-connector-j/8.0.32)
